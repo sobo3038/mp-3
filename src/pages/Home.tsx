@@ -11,7 +11,7 @@ export function Home() {
             <StyledMain>
                 <StyledHeaderTwo><strong>Home</strong></StyledHeaderTwo>
                     <HomePageContainer>
-                      <ProfileImage src="picture.jpeg" alt="Profile Picture" />
+                    <ProfileImage src="/picture.jpeg" alt="Profile Picture" />
                       <StyledSectionContainer><StyledParagraph> My name is Sofia Boada, and I am a senior studying Computer Science at Boston University. After graduation, I plan to work at Accenture as a tech architect, specializing in AI and ML.</StyledParagraph></StyledSectionContainer>
                     </HomePageContainer>
             </StyledMain>
