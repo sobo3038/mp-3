@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { StyledHeader, StyledHeaderContainer, StyledHeaderOne, StyledSubtitle  } from "../StyledComponents";
+import { StyledHeader, StyledHeaderContainer, StyledHeaderOne, StyledP  } from "../StyledComponents";
 
 
 export function Header(){
@@ -7,7 +7,7 @@ export function Header(){
         <StyledHeader>
             <StyledHeaderContainer>
                 <StyledHeaderOne>Sofia Boada</StyledHeaderOne>
-                <StyledSubtitle>My Online Resume</StyledSubtitle>
+                <StyledP>My Online Resume</StyledP>
             </StyledHeaderContainer>
         </StyledHeader>
     );

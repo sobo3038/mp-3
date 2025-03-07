@@ -2,7 +2,7 @@ import React from "react";
 import { Header } from "../components/Header";
 import { Nav } from "../components/Navigation";
 import { Footer } from "../components/Footer";
-import { StyledContainer, StyledParagraph, StyledMain, StyledTitle, SecContainer, SecHeading, StyledList, StyledListItem } from "../StyledComponents";
+import { StyledContainer, StyledMain, StyledHeaderTwo, StyledSectionContainer, StyledHeaderThree, StyledList } from "../StyledComponents";
 
 export function Skills() {
   return (
@@ -11,29 +11,21 @@ export function Skills() {
           <StyledContainer>
           <Nav />
           <StyledMain>
-              <StyledTitle><strong>Skills</strong></StyledTitle>
-
-              <SecContainer>
-                  <SecHeading>Programming Languages</SecHeading>
-                  <StyledList>
-                      <StyledParagraph>Python, Java, GO, JavaScript, C++, Swift</StyledParagraph>
-                  </StyledList>
-
-                  <SecHeading>Web Development</SecHeading>
-                  <StyledList>
-                      <StyledListItem>React, Node.js, HTML, CSS</StyledListItem>
-                  </StyledList>
-
-                  <SecHeading>Tools & Technologies</SecHeading>
-                  <StyledList>
-                      <StyledListItem>Git, VSCode, AWS, Neo4j</StyledListItem>
-                  </StyledList>
-
-                  <SecHeading>Languages</SecHeading>
-                  <StyledList>
-                      <StyledListItem>English (Fluent), Spanish (Native), Mandarin (Elementary)</StyledListItem>
-                  </StyledList>
-              </SecContainer>
+              <StyledHeaderTwo><strong>Skills</strong></StyledHeaderTwo>
+              <StyledSectionContainer>
+                  {/*Skill 1*/}
+                  <StyledHeaderThree>Programming Languages</StyledHeaderThree>
+                      <StyledList>Python, Java, GO, JavaScript, C++, Swift</StyledList>
+                  {/*Skill 2*/}
+                  <StyledHeaderThree>Web Development</StyledHeaderThree>
+                      <StyledList>React, Node.js, HTML, CSS</StyledList>
+                  {/*Skill 3*/}
+                  <StyledHeaderThree>Tools & Technologies</StyledHeaderThree>
+                      <StyledList>Git, VSCode, AWS, Neo4j</StyledList>
+                  {/*Skill 4*/}
+                  <StyledHeaderThree>Languages</StyledHeaderThree>
+                      <StyledList>English (Fluent), Spanish (Native), Mandarin (Elementary)</StyledList>
+              </StyledSectionContainer>
           </StyledMain>
           </StyledContainer>
           <Footer />

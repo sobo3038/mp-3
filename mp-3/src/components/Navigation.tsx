@@ -1,17 +1,17 @@
 import styled from "styled-components";
-import { StyledNav, StyledNavList, StyledNavItem, StyledNavLink } from "../StyledComponents";
+import { StyledNavigation, StyledNavigationList, StyledNavigationItem, StyledNavigationLink } from "../StyledComponents";
 
 export function Nav() {
     return (
-        <StyledNav>
-            <StyledNavList>
-            <StyledNavItem><StyledNavLink to="/">Home</StyledNavLink></StyledNavItem>
-                <StyledNavItem><StyledNavLink to="/education">Education</StyledNavLink></StyledNavItem>
-                <StyledNavItem><StyledNavLink to="/experiences">Experiences</StyledNavLink></StyledNavItem>
-                <StyledNavItem><StyledNavLink to="/projects">Projects</StyledNavLink></StyledNavItem>
-                <StyledNavItem><StyledNavLink to="/skills">Skills</StyledNavLink></StyledNavItem>
-                <StyledNavItem><StyledNavLink to="/contact">Contact</StyledNavLink></StyledNavItem>
-            </StyledNavList>
-        </StyledNav>
+        <StyledNavigation>
+            <StyledNavigationList>
+            <StyledNavigationItem><StyledNavigationLink to="/">Home</StyledNavigationLink></StyledNavigationItem>
+                <StyledNavigationItem><StyledNavigationLink to="/education">Education</StyledNavigationLink></StyledNavigationItem>
+                <StyledNavigationItem><StyledNavigationLink to="/experiences">Experiences</StyledNavigationLink></StyledNavigationItem>
+                <StyledNavigationItem><StyledNavigationLink to="/skills">Skills</StyledNavigationLink></StyledNavigationItem>
+                <StyledNavigationItem><StyledNavigationLink to="/projects">Projects</StyledNavigationLink></StyledNavigationItem>
+                <StyledNavigationItem><StyledNavigationLink to="/contact">Contact</StyledNavigationLink></StyledNavigationItem>
+            </StyledNavigationList>
+        </StyledNavigation>
     )   
 }

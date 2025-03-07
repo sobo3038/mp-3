@@ -1,68 +1,42 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-/* Entire page */
+/* Entire page / General styling*/
 export const StyledMain = styled.main`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 3vh 0;
-  background-color: #DBEAFE;
-  width: 70%;
-  min-height: 100vh;
-  font-family: 'Arial, sans-serif';
-  margin: 0 auto; 
-
-  @media screen and (max-width: 750px) {
-    width: 100%; 
-  }
-`;
-
-/* Wrap all sections */
-export const StyledContainer = styled.div`
-  display: flex;
-  width: 100%;
-  background-color: #DBEAFE;
-  justify-content: center; 
-
-  @media screen and (max-width: 750px) {
+    display: flex;
+    background-color: #DBEAFE;
     flex-direction: column;
-  }
+    align-items: center;
+    width: 70%;
+    padding: 5vh 0;
+    min-height: 100vh;
+    font-family: 'Arial, sans-serif';
+    margin: 0 auto; 
+
+    @media screen and (max-width: 750px) {
+        width: 100%; 
+    }
 `;
 
-/* Page Title */
-export const StyledTitle = styled.h2`
-  text-align: center;
-  font-size: calc(24px + 1vw);
-  font-weight: 500;
-  color: #1E3A8A;
-  margin-bottom: 2vh;
+export const StyledContainer = styled.div`
+    display: flex;
+    width: 100%;
+    background-color: #DBEAFE;
+    justify-content: center; 
+
+    @media screen and (max-width: 750px) {
+        flex-direction: column;
+    }
 `;
 
-/* Container Sections */
-export const SecContainer = styled.div`
+export const StyledSectionContainer = styled.div`
   width: 90%;
   max-width: 900px; 
   margin: 0 auto 2vh; 
   padding: 1vh 2vw;
 `;
 
-/* Section Heading */
-export const SecHeading = styled.h3`
-  color: #1D4ED8;
-  font-size: calc(20px + 0.5vw);
-  font-weight: bold;
-  margin-bottom: 1vh;
-`;
-
-/* List Container */
-export const StyledList = styled.ul`
-  list-style-type: disc;
-  padding-left: 2vw;
-`;
-
-/* List Item */
-export const StyledListItem = styled.li`
+export const StyledList = styled.li`
 font-size: calc(12px + 0.5vw);
 color: black;
 margin-bottom: 1vh;
@@ -71,40 +45,55 @@ word-wrap: break-word;
 text-align: left; 
 `;
 
-
-/* Paragraph */
 export const StyledParagraph = styled.p`
   font-size: calc(12px + 0.5vw);
   color: black;
   margin-bottom: 1vh;
-  max-width: 500px; 
+  max-width: 1000px; 
   word-wrap: break-word;
   text-align: left; 
+  margin: 10px;
 `;
 
-
-/* Images */
-export const ConImage = styled.img`
-  width: 100%;
-  max-width: 19vw;
-  border-radius: 50%;
+/*Headers/Titles*/
+export const StyledHeaderOne = styled.h1`
+    margin: 0;
+    font-size: calc(28px + 2vw); 
+    text-align: left;
+    @media screen and (max-width: 750px) {
+        text-align: center;
+        font-size: calc(24px + 1.5vw); 
+    }
+`;
+export const StyledHeaderTwo = styled.h2`
+  text-align: center;
+  font-size: calc(24px + 1vw);
+  font-weight: 500;
+  color: #1E3A8A;
   margin-bottom: 2vh;
 `;
 
+export const StyledHeaderThree = styled.h3`
+  color: #1D4ED8;
+  font-size: calc(20px + 0.5vw);
+  font-weight: bold;
+  margin-bottom: 1vh;
+`;
+
 /* Navigation */
-export const StyledNav = styled.nav`
+export const StyledNavigation = styled.nav`
   display: flex;
-  width: 30%;
   background-color: #3b82f6;
   padding: 1% 1%;
   justify-content: center;
+  width: 30%;
   
   @media screen and (max-width: 750px) {
     width: 100%;
     padding: 0; /*fixed excess nav error!*/
   }
 `;
-export const StyledNavList = styled.ul`
+export const StyledNavigationList = styled.ul`
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -125,9 +114,9 @@ export const StyledNavList = styled.ul`
     height: auto;
   }
 `;
-export const StyledNavItem = styled.li`
-  background-color: #1e3a8a;
-  border-radius: 1vw;
+export const StyledNavigationItem = styled.li`
+  background-color: #1D4ED8;
+  border-radius: 5px;
   padding: 0.3vw 0.7vw;
 
   @media screen and (max-width: 750px) {
@@ -135,94 +124,79 @@ export const StyledNavItem = styled.li`
     width: 100%;
   }
 `;
-export const StyledNavLink = styled(Link)`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: calc(10px + 0.75vw);
-  font-weight: bold;
-  width: 90%;
-  padding: 5%;
-  color: white;
-  background-color: #1e3a8a;
-  text-decoration: none;
-  border-radius: 1vw;
-
-  &:hover {
-    text-decoration: underline;
-  }
-
-  @media screen and (max-width: 750px) {
+export const StyledNavigationLink = styled(Link)`
+    font-size: calc(16px + 0.5vw);
     display: flex;
-    width: 100%;
-    font-size: calc(9px + 0.75vw);
     align-items: center;
     justify-content: center;
     text-align: center;
-  }
+    padding: 4%;
+    color: white;
+    background-color: #1D4ED8;
+    text-decoration: none;
+    border-radius: 1vw;
+    &:hover {
+        text-decoration: underline;
+    }
+    @media screen and (max-width: 750px) {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        width: 100%;    
+        font-size: calc(9px + 0.75vw);
+    }
 `;
 
 /* Footer */
 export const StyledFooter = styled.footer`
-  background-color: #1e40af;
-  color: white;
-  padding: 1vh 1vw;
-  text-align: center;
-  width: 100%;
-  margin-top: auto;
+    background-color: #1e40af;
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+    padding: 0.1% 0;
 `;
 export const FooterLink = styled.a`
-  color: white;
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
+    color: white;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
 `;
 
 /* Header*/
 export const StyledHeader = styled.header`
-  display: flex;
-  background-color: #1e3a8a;
-  color: white;
-  padding: 1% 2%;
-
-  @media screen and (max-width: 750px) {
-    justify-content: center;
-    align-items: center;
-  }
+    display: flex;
+    padding: 1% 4%;
+    background-color: #1e3a8a;
+    color: white;
+    @media screen and (max-width: 750px) {
+        justify-content: center;
+        align-items: center;
+    }
 `;
 export const StyledHeaderContainer = styled.div`
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
 `;
-export const StyledHeaderOne = styled.h1`
-  margin: 0;
-  font-size: calc(28px + 2vw); 
-  text-align: left;
 
-  @media screen and (max-width: 750px) {
-    text-align: center;
-    font-size: calc(24px + 1.5vw); 
-  }
-`;
-export const StyledSubtitle = styled.p`
-  font-size: calc(12px + 0.8vw);
-  text-align: left;
-  margin-top: 1px; 
-
-  @media screen and (max-width: 750px) {
-    text-align: center;
-    font-size: calc(10px + 0.8vw);
-  }
+export const StyledP = styled.p`
+    font-size: calc(12px + 0.8vw);
+    text-align: left;
+    margin-top: 1px; 
+    @media screen and (max-width: 750px) {
+        text-align: center;
+        font-size: calc(10px + 0.8vw);
+    }
 `;
 export const StyledLink = styled.a`
-  color: blue;
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
+    color: blue;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
 `;
 
 /*Calc*/
@@ -267,4 +241,32 @@ export const CalculatorButton = styled.button`
 
 export const CalculatorOutput = styled.h3`
     color: ${(props) => (props.color ? props.color : "black")};
+`;
+
+/*Home Page*/
+export const HomePageContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
+
+export const ProfileImage = styled.img`
+    width: 40%;
+    margin-bottom: 5%;
+`;
+
+/*Projjects Page*/
+export const ContentWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 800px;
+`;
+
+export const ListItem = styled.li`
+    margin-bottom: 5px;
+`;
+
+export const CalculatorWrapper = styled.div`
+    margin-top: 5px; 
 `;

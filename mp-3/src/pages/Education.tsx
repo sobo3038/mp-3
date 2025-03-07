@@ -1,10 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Header } from "../components/Header";
 import { Nav } from "../components/Navigation";
 import { Footer } from "../components/Footer";
-import { StyledMain, SecHeading, StyledParagraph, StyledContainer, StyledTitle, SecContainer } from "../StyledComponents";
+import { StyledMain, StyledHeaderThree, StyledParagraph, StyledContainer, StyledHeaderTwo, StyledSectionContainer } from "../StyledComponents";
 
 const EducationContainer = styled.div`
   display: flex;
@@ -30,14 +29,14 @@ export function Education() {
         <StyledContainer>
         <Nav />
         <StyledMain>
-            <StyledTitle><strong>Education</strong></StyledTitle>
+            <StyledHeaderTwo><strong>Education</strong></StyledHeaderTwo>
                 <EducationContainer>
                     <ContentWrapper>
-                      <SecContainer>
-                      <SecHeading>Boston University, College of Arts and Sciences</SecHeading>
+                      <StyledSectionContainer>
+                      <StyledHeaderThree>Boston University, College of Arts and Sciences</StyledHeaderThree>
                         <StyledParagraph><strong>BA in Computer Science</strong>: Class of 2025</StyledParagraph>
                         <StyledParagraph><strong>Coursework:</strong> Distributed Systems, Object-Oriented Programming, Machine Learning, Data Structures, Software Engineering, and Full Stack Development.</StyledParagraph>
-                      </SecContainer>
+                      </StyledSectionContainer>
                         
                     </ContentWrapper>
                     <EducationImage 

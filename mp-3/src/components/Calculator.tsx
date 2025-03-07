@@ -3,61 +3,60 @@ import { useState } from "react";
 import { CalculatorContainer, StyledInput, ButtonContainer, CalculatorButton,CalculatorOutput } from "../StyledComponents";
 
 export function Calculator() {
-    const [firstNumber, setFirstNumber] = useState<string>("");
-    const [secondNumber, setSecondNumber] = useState<string>("");
-    const [output, setOutput] = useState<string>("");
+    const [firstNum, setFirstNum] = useState("");
+    const [secondNum, setSecondNum] = useState("");
+    const [output, setResult] = useState("");
 
     function getValues() {
-        return {
-            first: Number(firstNumber),
-            second: Number(secondNumber),
-        };
+        let first = Number(firstNum);
+        let second = Number(secondNum);
+        return { first, second };
     }
 
     function addition() {
-        const { first, second } = getValues();
-        setOutput(String(first + second));
+        let values = getValues();
+        setResult(String(values.first + values.second));
     }
 
     function subtraction() {
-        const { first, second } = getValues();
-        setOutput(String(first - second));
+        let values = getValues();
+        setResult(String(values.first - values.second));
     }
 
     function multiplication() {
-        const { first, second } = getValues();
-        setOutput(String(first * second));
+        let values = getValues();
+        setResult(String(values.first * values.second));
     }
 
     function division() {
-        const { first, second } = getValues();
-        if (second === 0) {
-            setOutput("Error");
+        let values = getValues();
+        if (values.second === 0) {
+            setResult("Error");
         } else {
-            setOutput(String(first / second));
+            setResult(String(values.first / values.second));
         }
     }
 
     function power() {
-        const { first, second } = getValues();
+        let values = getValues();
         let result = 1;
-        if (second >= 0) {
-            for (let i = 0; i < second; i++) {
-                result *= first;
+        if (values.second >= 0) {
+            for (let i = 0; i < values.second; i++) {
+                result *= values.first;
             }
         } else {
-            for (let i = 0; i < -second; i++) {
-                result *= first;
+            for (let i = 0; i < -values.second; i++) {
+                result *= values.first;
             }
             result = 1 / result;
         }
-        setOutput(String(result));
+        setResult(String(result));
     }
 
     function clearFields() {
-        setFirstNumber("");
-        setSecondNumber("");
-        setOutput("");
+        setFirstNum("");
+        setSecondNum("");
+        setResult("");
     }
 
     return (
@@ -66,15 +65,15 @@ export function Calculator() {
             <label>First Number:</label>
             <StyledInput
                 type="number"
-                value={firstNumber}
-                onChange={(e) => setFirstNumber(e.target.value)}
+                value={firstNum}
+                onChange={(e) => setFirstNum(e.target.value)}
             />
 
             <label>Second Number:</label>
             <StyledInput
                 type="number"
-                value={secondNumber}
-                onChange={(e) => setSecondNumber(e.target.value)}
+                value={secondNum}
+                onChange={(e) => setSecondNum(e.target.value)}
             />
 
             <ButtonContainer>
