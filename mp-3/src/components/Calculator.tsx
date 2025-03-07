@@ -3,9 +3,9 @@ import { useState } from "react";
 import { CalculatorContainer, StyledInput, ButtonContainer, CalculatorButton, CalculatorOutput } from "../StyledComponents";
 
 function useCalculator() {
-    const [firstNum, setFirstNum] = useState("");
-    const [secondNum, setSecondNum] = useState("");
-    const [output, setResult] = useState("");
+    const[firstNum,setFirstNum]=useState("");
+    const[secondNum,setSecondNum]=useState("");
+    const[output,setResult]=useState("");
 
     function getValues() {
         let first = Number(firstNum);

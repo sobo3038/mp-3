@@ -225,13 +225,15 @@ export const StyledLink = styled.a`
 
 /*Calc*/
 export const CalculatorContainer = styled.div`
-    width: 400px;
+    width: 450px;
     margin: 20px auto;
     text-align: center;
     border: 10px solid #1e3a8a;
     border-radius: 30px;
     background-color: white;
     padding: 10px;
+    margin-left: 0; 
+    margin-right: auto;
 `;
 export const StyledInput = styled.input`
     width: 95%;
