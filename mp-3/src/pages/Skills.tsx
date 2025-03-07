@@ -6,8 +6,7 @@ import { StyledContainer, StyledMain, StyledHeaderTwo, StyledSectionContainer, S
 
 export function Skills() {
   return (
-      <>  
-          <Header />
+      <>  <Header />
           <StyledContainer>
           <Nav />
           <StyledMain>
@@ -28,7 +27,6 @@ export function Skills() {
               </StyledSectionContainer>
           </StyledMain>
           </StyledContainer>
-          <Footer />
-      </>
+          <Footer /> </>
   );
 }

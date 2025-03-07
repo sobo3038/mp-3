@@ -12,20 +12,17 @@ export function Experiences() {
             <Nav />
                 <StyledMain>
                     <StyledHeaderTwo><strong>Experiences</strong></StyledHeaderTwo>
-
                     {/*Job 1*/}
                     <StyledSectionContainer>
                         <StyledHeaderThree>Accenture - Denver, CO</StyledHeaderThree>
                         <StyledParagraph><strong>Enterprise Tech Arch Analyst | Incoming September 2025</strong></StyledParagraph>
                     </StyledSectionContainer>
-
                     {/*Job 2*/}
                     <StyledSectionContainer>
                         <StyledHeaderThree>Accenture - Denver, CO</StyledHeaderThree>
                         <StyledParagraph><strong>Enterprise Tech Arch Intern | June - August 2024</strong></StyledParagraph>
                         <StyledParagraph>Worked on AI solutions for a leading networking hardware company. Developed high-level architecture diagrams for AI-powered transaction log analysis.</StyledParagraph>
                     </StyledSectionContainer>
-
                     {/*Job 3*/}
                     <StyledSectionContainer>
                         <StyledHeaderThree>Agtools Inc. - Orange, CA</StyledHeaderThree>

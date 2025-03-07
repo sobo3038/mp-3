@@ -5,7 +5,6 @@ import { Nav } from "../components/Navigation";
 import { Footer } from "../components/Footer";
 import { StyledMain, StyledContainer, StyledParagraph,StyledHeaderTwo, StyledSectionContainer } from "../StyledComponents";
 
-
 const ContactLink = styled.a`
   color: blue;
   text-decoration: none;

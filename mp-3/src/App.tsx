@@ -1,16 +1,16 @@
 import { createBrowserRouter, Route, RouterProvider, Routes } from 'react-router-dom';
-
 import { Home } from "./pages/Home";
 import { Education } from './pages/Education';
 import { Experiences } from './pages/Experiences';
 import { Projects } from './pages/Projects';
 import { Skills } from './pages/Skills';
 import { Contact } from './pages/Contact';
-
+import { StyledPageWrapper } from './StyledComponents'; 
+import GlobalStyle from './GlobalStyle';
 
 function Root() {
   return (
-    <>
+    <StyledPageWrapper> 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/education" element={<Education />} />
@@ -19,15 +19,19 @@ function Root() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </>
+    </StyledPageWrapper>
   );
 }
 
 const router = createBrowserRouter(
-  [{path:"*", Component: Root},]
-)
-
+  [{ path: "*", Component: Root }]
+);
 
 export default function App() {
-	return <RouterProvider router={router}/>
+  return (
+    <>
+      <GlobalStyle /> 
+      <RouterProvider router={router} />
+    </>
+  );
 }

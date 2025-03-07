@@ -17,7 +17,20 @@ export const StyledMain = styled.main`
         width: 100%; 
     }
 `;
-
+export const StyledPageWrapper = styled.div` 
+    max-width: 1400px; 
+    margin: 0 auto;
+    padding: 0 4vw; 
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /*margin on left and white*/
+    @media screen and (max-width: 750px) {
+        max-width: 95%;
+        padding: 0 2vw;
+    }
+`;
 export const StyledContainer = styled.div`
     display: flex;
     width: 100%;
@@ -28,14 +41,12 @@ export const StyledContainer = styled.div`
         flex-direction: column;
     }
 `;
-
 export const StyledSectionContainer = styled.div`
   width: 90%;
   max-width: 900px; 
   margin: 0 auto 2vh; 
   padding: 1vh 2vw;
 `;
-
 export const StyledList = styled.li`
 font-size: calc(12px + 0.5vw);
 color: black;
@@ -44,7 +55,6 @@ max-width: 500px;
 word-wrap: break-word;
 text-align: left; 
 `;
-
 export const StyledParagraph = styled.p`
   font-size: calc(12px + 0.5vw);
   color: black;
@@ -54,6 +64,8 @@ export const StyledParagraph = styled.p`
   text-align: left; 
   margin: 10px;
 `;
+
+
 
 /*Headers/Titles*/
 export const StyledHeaderOne = styled.h1`
@@ -79,6 +91,8 @@ export const StyledHeaderThree = styled.h3`
   font-weight: bold;
   margin-bottom: 1vh;
 `;
+
+
 
 /* Navigation */
 export const StyledNavigation = styled.nav`
@@ -148,6 +162,8 @@ export const StyledNavigationLink = styled(Link)`
     }
 `;
 
+
+
 /* Footer */
 export const StyledFooter = styled.footer`
     background-color: #1e40af;
@@ -155,7 +171,8 @@ export const StyledFooter = styled.footer`
     text-align: center;
     width: 100%;
     margin-top: auto;
-    padding: 0.1% 0;
+    padding: 1.5% 0; 
+    font-size: calc(10px + 0.5vw); 
 `;
 export const FooterLink = styled.a`
     color: white;
@@ -164,6 +181,8 @@ export const FooterLink = styled.a`
         text-decoration: underline;
     }
 `;
+
+
 
 /* Header*/
 export const StyledHeader = styled.header`
@@ -179,9 +198,12 @@ export const StyledHeader = styled.header`
 export const StyledHeaderContainer = styled.div`
     flex-direction: column;
     display: flex;
-    align-items: center;
-`;
+    align-items: flex-start;
 
+    @media screen and (max-width: 750px) {
+        align-items: center; 
+    }
+`;
 export const StyledP = styled.p`
     font-size: calc(12px + 0.8vw);
     text-align: left;
@@ -199,6 +221,8 @@ export const StyledLink = styled.a`
     }
 `;
 
+
+
 /*Calc*/
 export const CalculatorContainer = styled.div`
     width: 400px;
@@ -209,7 +233,6 @@ export const CalculatorContainer = styled.div`
     background-color: white;
     padding: 10px;
 `;
-
 export const StyledInput = styled.input`
     width: 95%;
     margin: 10px auto;
@@ -220,11 +243,9 @@ export const StyledInput = styled.input`
     padding: 10px;
 
 `;
-
 export const ButtonContainer = styled.div`
     margin: 10px;
 `;
-
 export const CalculatorButton = styled.button`
     padding: 8px;
     margin: 5px;
@@ -238,10 +259,11 @@ export const CalculatorButton = styled.button`
         background-color: blue;
     }
 `;
-
 export const CalculatorOutput = styled.h3`
     color: ${(props) => (props.color ? props.color : "black")};
 `;
+
+
 
 /*Home Page*/
 export const HomePageContainer = styled.div`
@@ -249,11 +271,12 @@ export const HomePageContainer = styled.div`
     flex-direction: column;
     align-items: center;
 `;
-
 export const ProfileImage = styled.img`
     width: 40%;
     margin-bottom: 5%;
 `;
+
+
 
 /*Projjects Page*/
 export const ContentWrapper = styled.div`
@@ -262,11 +285,9 @@ export const ContentWrapper = styled.div`
     align-items: flex-start;
     max-width: 800px;
 `;
-
 export const ListItem = styled.li`
     margin-bottom: 5px;
 `;
-
 export const CalculatorWrapper = styled.div`
     margin-top: 5px; 
 `;

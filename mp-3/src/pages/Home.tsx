@@ -6,8 +6,7 @@ import { StyledMain,StyledParagraph, StyledContainer, HomePageContainer,ProfileI
 
 export function Home() {
   return (
-      <>
-        <Header />
+      <> <Header />
         <StyledContainer>
           <Nav />
             <StyledMain>
@@ -18,7 +17,6 @@ export function Home() {
                     </HomePageContainer>
             </StyledMain>
         </StyledContainer>
-        <Footer />
-      </>
+        <Footer /></>
   );
 }
