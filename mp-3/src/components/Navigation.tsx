@@ -1,18 +1,17 @@
 import styled from "styled-components";
-
-import { StyledNav, NavList, NavItem, NavLink } from "../StyledComponents";
+import { StyledNav, StyledNavList, StyledNavItem, StyledNavLink } from "../StyledComponents";
 
 export function Nav() {
     return (
         <StyledNav>
-            <NavList>
-            <NavItem><NavLink to="/">Home</NavLink></NavItem>
-                <NavItem><NavLink to="/education">Education</NavLink></NavItem>
-                <NavItem><NavLink to="/experiences">Experiences</NavLink></NavItem>
-                <NavItem><NavLink to="/projects">Projects</NavLink></NavItem>
-                <NavItem><NavLink to="/skills">Skills</NavLink></NavItem>
-                <NavItem><NavLink to="/contact">Contact</NavLink></NavItem>
-            </NavList>
+            <StyledNavList>
+            <StyledNavItem><StyledNavLink to="/">Home</StyledNavLink></StyledNavItem>
+                <StyledNavItem><StyledNavLink to="/education">Education</StyledNavLink></StyledNavItem>
+                <StyledNavItem><StyledNavLink to="/experiences">Experiences</StyledNavLink></StyledNavItem>
+                <StyledNavItem><StyledNavLink to="/projects">Projects</StyledNavLink></StyledNavItem>
+                <StyledNavItem><StyledNavLink to="/skills">Skills</StyledNavLink></StyledNavItem>
+                <StyledNavItem><StyledNavLink to="/contact">Contact</StyledNavLink></StyledNavItem>
+            </StyledNavList>
         </StyledNav>
     )   
 }

@@ -4,9 +4,8 @@ import { Nav } from "../components/Navigation";
 import { Footer } from "../components/Footer";
 import styled from "styled-components";
 import { Calculator } from "../components/Calculator";
-import { StyledContainer, StyledParagraph, SectionHeading, SectionTitle,StyledLink, StyledMain, StyledList } from "../StyledComponents";
+import { StyledContainer, StyledParagraph, SecHeading, SecContainer,StyledTitle,StyledLink, StyledMain, StyledList } from "../StyledComponents";
 
-// Styled components for improved alignment and styling
 const ContentWrapper = styled.div`
     display: flex;
     flex-direction: column;
@@ -29,9 +28,11 @@ export function Projects() {
           <StyledContainer>
           <Nav />
           <StyledMain>
-              <SectionTitle><strong>Projects</strong></SectionTitle>
+              <StyledTitle><strong>Projects</strong></StyledTitle>
               <ContentWrapper>
-                  <SectionHeading>College Work</SectionHeading>
+
+              <SecContainer>
+              <SecHeading>College Work</SecHeading>
                   <StyledParagraph>Here are some of my projects:</StyledParagraph>
                   <StyledList>
                     <ListItem>
@@ -56,10 +57,12 @@ export function Projects() {
                     </ListItem>
                   </StyledList>
 
-                  <SectionHeading>Calculator</SectionHeading>
+                  <SecHeading>Calculator</SecHeading>
                   <CalculatorWrapper>
                       <Calculator />
                   </CalculatorWrapper>
+              </SecContainer>
+                  
               </ContentWrapper>
           </StyledMain>
           </StyledContainer>

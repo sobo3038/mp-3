@@ -31,7 +31,7 @@ export const StyledContainer = styled.div`
 `;
 
 /* Page Title */
-export const SectionTitle = styled.h2`
+export const StyledTitle = styled.h2`
   text-align: center;
   font-size: calc(24px + 1vw);
   font-weight: 500;
@@ -40,15 +40,15 @@ export const SectionTitle = styled.h2`
 `;
 
 /* Container Sections */
-export const SectionContainer = styled.div`
-  width: 80%;
-  max-width: 800px; 
+export const SecContainer = styled.div`
+  width: 90%;
+  max-width: 900px; 
   margin: 0 auto 2vh; 
   padding: 1vh 2vw;
 `;
 
 /* Section Heading */
-export const SectionHeading = styled.h3`
+export const SecHeading = styled.h3`
   color: #1D4ED8;
   font-size: calc(20px + 0.5vw);
   font-weight: bold;
@@ -84,7 +84,7 @@ export const StyledParagraph = styled.p`
 
 
 /* Images */
-export const ContactImage = styled.img`
+export const ConImage = styled.img`
   width: 100%;
   max-width: 19vw;
   border-radius: 50%;
@@ -104,7 +104,7 @@ export const StyledNav = styled.nav`
     padding: 0; /*fixed excess nav error!*/
   }
 `;
-export const NavList = styled.ul`
+export const StyledNavList = styled.ul`
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -125,7 +125,7 @@ export const NavList = styled.ul`
     height: auto;
   }
 `;
-export const NavItem = styled.li`
+export const StyledNavItem = styled.li`
   background-color: #1e3a8a;
   border-radius: 1vw;
   padding: 0.3vw 0.7vw;
@@ -135,7 +135,7 @@ export const NavItem = styled.li`
     width: 100%;
   }
 `;
-export const NavLink = styled(Link)`
+export const StyledNavLink = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,12 +192,12 @@ export const StyledHeader = styled.header`
     align-items: center;
   }
 `;
-export const HeaderContainer = styled.div`
+export const StyledHeaderContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
 `;
-export const StyledH1 = styled.h1`
+export const StyledHeaderOne = styled.h1`
   margin: 0;
   font-size: calc(28px + 2vw); 
   text-align: left;
@@ -225,7 +225,7 @@ export const StyledLink = styled.a`
   }
 `;
 
-/*Calculator*/
+/*Calc*/
 export const CalculatorContainer = styled.div`
     width: 400px;
     margin: 20px auto;
@@ -236,7 +236,7 @@ export const CalculatorContainer = styled.div`
     padding: 10px;
 `;
 
-export const Input = styled.input`
+export const StyledInput = styled.input`
     width: 95%;
     margin: 10px auto;
     border: 1px solid black;
@@ -251,7 +251,7 @@ export const ButtonContainer = styled.div`
     margin: 10px;
 `;
 
-export const CalcButton = styled.button`
+export const CalculatorButton = styled.button`
     padding: 8px;
     margin: 5px;
     font-size: 15px;
@@ -265,6 +265,6 @@ export const CalcButton = styled.button`
     }
 `;
 
-export const Output = styled.h3`
+export const CalculatorOutput = styled.h3`
     color: ${(props) => (props.color ? props.color : "black")};
 `;

@@ -1,12 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-
 import { Header } from "../components/Header";
 import { Nav } from "../components/Navigation";
 import { Footer } from "../components/Footer";
-
-import { StyledMain, SectionHeading, StyledParagraph, StyledContainer, SectionTitle } from "../StyledComponents";
+import { StyledMain, SecHeading, StyledParagraph, StyledContainer, StyledTitle, SecContainer } from "../StyledComponents";
 
 const EducationContainer = styled.div`
   display: flex;
@@ -17,7 +15,7 @@ const EducationContainer = styled.div`
 
 const ContentWrapper = styled.div`
   max-width: 700px; 
-  text-align: center;
+  text-align: left;
 `;
 
 const EducationImage = styled.img`
@@ -32,12 +30,15 @@ export function Education() {
         <StyledContainer>
         <Nav />
         <StyledMain>
-            <SectionTitle><strong>Education</strong></SectionTitle>
+            <StyledTitle><strong>Education</strong></StyledTitle>
                 <EducationContainer>
                     <ContentWrapper>
-                        <SectionHeading>Boston University, College of Arts and Sciences</SectionHeading>
+                      <SecContainer>
+                      <SecHeading>Boston University, College of Arts and Sciences</SecHeading>
                         <StyledParagraph><strong>BA in Computer Science</strong>: Class of 2025</StyledParagraph>
                         <StyledParagraph><strong>Coursework:</strong> Distributed Systems, Object-Oriented Programming, Machine Learning, Data Structures, Software Engineering, and Full Stack Development.</StyledParagraph>
+                      </SecContainer>
+                        
                     </ContentWrapper>
                     <EducationImage 
                         src="https://www.north49decals.com/cdn/shop/products/bostonuniversity.jpg?v=1588882484" 

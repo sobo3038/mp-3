@@ -1,12 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-
 import { Header } from "../components/Header";
 import { Nav } from "../components/Navigation";
 import { Footer } from "../components/Footer";
-
-import { StyledMain,StyledParagraph, StyledContainer, SectionTitle } from "../StyledComponents";
+import { StyledMain,StyledParagraph, StyledContainer, SecContainer, StyledTitle } from "../StyledComponents";
 
 const HomeContainer = styled.div`
   display: flex;
@@ -28,15 +26,18 @@ export function Home() {
         <StyledContainer>
         <Nav />
         <StyledMain>
-            <SectionTitle><strong>Home</strong></SectionTitle>
+            <StyledTitle><strong>Home</strong></StyledTitle>
                 <HomeContainer>
-                    <HomeImage src="picture.jpeg" alt="Profile Picture" />
-                    <StyledParagraph>
-                        My name is Sofia Boada, and I am a senior studying Computer Science at Boston University. 
-                    </StyledParagraph>
-                    <StyledParagraph>
-                        After graduation, I plan to work at Accenture as a tech architect, specializing in AI and ML.
-                    </StyledParagraph>
+                <HomeImage src="picture.jpeg" alt="Profile Picture" />
+                <SecContainer>
+                      <StyledParagraph>
+                          My name is Sofia Boada, and I am a senior studying Computer Science at Boston University. 
+                      </StyledParagraph>
+                      <StyledParagraph>
+                          After graduation, I plan to work at Accenture as a tech architect, specializing in AI and ML.
+                      </StyledParagraph>
+                </SecContainer>
+                    
                 </HomeContainer>
         </StyledMain>
         </StyledContainer>

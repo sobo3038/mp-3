@@ -2,8 +2,7 @@ import React from "react";
 import { Header } from "../components/Header";
 import { Nav } from "../components/Navigation";
 import { Footer } from "../components/Footer";
-
-import { StyledContainer, StyledMain, SectionTitle, SectionContainer, SectionHeading, StyledList, StyledListItem } from "../StyledComponents";
+import { StyledContainer, StyledParagraph, StyledMain, StyledTitle, SecContainer, SecHeading, StyledList, StyledListItem } from "../StyledComponents";
 
 export function Skills() {
   return (
@@ -12,36 +11,29 @@ export function Skills() {
           <StyledContainer>
           <Nav />
           <StyledMain>
-              <SectionTitle><strong>Skills</strong></SectionTitle>
+              <StyledTitle><strong>Skills</strong></StyledTitle>
 
-              <SectionContainer>
-                  <SectionHeading>Programming Languages</SectionHeading>
+              <SecContainer>
+                  <SecHeading>Programming Languages</SecHeading>
                   <StyledList>
-                      <StyledListItem>Python, Java, GO, JavaScript, C++, Swift</StyledListItem>
+                      <StyledParagraph>Python, Java, GO, JavaScript, C++, Swift</StyledParagraph>
                   </StyledList>
-              </SectionContainer>
 
-              <SectionContainer>
-                  <SectionHeading>Web Development</SectionHeading>
+                  <SecHeading>Web Development</SecHeading>
                   <StyledList>
                       <StyledListItem>React, Node.js, HTML, CSS</StyledListItem>
                   </StyledList>
-              </SectionContainer>
 
-              <SectionContainer>
-                  <SectionHeading>Tools & Technologies</SectionHeading>
+                  <SecHeading>Tools & Technologies</SecHeading>
                   <StyledList>
                       <StyledListItem>Git, VSCode, AWS, Neo4j</StyledListItem>
                   </StyledList>
-              </SectionContainer>
 
-              <SectionContainer>
-                  <SectionHeading>Languages</SectionHeading>
+                  <SecHeading>Languages</SecHeading>
                   <StyledList>
                       <StyledListItem>English (Fluent), Spanish (Native), Mandarin (Elementary)</StyledListItem>
-
                   </StyledList>
-              </SectionContainer>
+              </SecContainer>
           </StyledMain>
           </StyledContainer>
           <Footer />

@@ -1,50 +1,6 @@
 import styled from "styled-components";
 import { useState } from "react";
-import {CalculatorContainer,Input,ButtonContainer, CalcButton, Output } from "../StyledComponents";
-
-
-export const CalculatorContainer = styled.div`
-    width: 400px;
-    margin: 20px auto;
-    text-align: center;
-    border: 10px solid #1e3a8a;
-    border-radius: 30px;
-    background-color: white;
-    padding: 10px;
-`;
-
-export const Input = styled.input`
-    width: 95%;
-    margin: 10px auto;
-    border: 1px solid black;
-    border-radius: 5px;
-    font-size: 12px;
-    text-align: center;
-    padding: 10px;
-
-`;
-
-export const ButtonContainer = styled.div`
-    margin: 10px;
-`;
-
-export const CalcButton = styled.button`
-    padding: 8px;
-    margin: 5px;
-    font-size: 15px;
-    background-color: #1e3a8a;
-    color: white;
-    border: none;
-    border-radius: 5px;
-
-    &:hover {
-        background-color: blue;
-    }
-`;
-
-export const Output = styled.h3`
-    color: ${(props) => (props.color ? props.color : "black")};
-`;
+import { CalculatorContainer, StyledInput, ButtonContainer, CalculatorButton,CalculatorOutput } from "../StyledComponents";
 
 export function Calculator() {
     const [firstNumber, setFirstNumber] = useState<string>("");
@@ -108,31 +64,31 @@ export function Calculator() {
         <CalculatorContainer>
             <h2>Calculator</h2>
             <label>First Number:</label>
-            <Input
+            <StyledInput
                 type="number"
                 value={firstNumber}
                 onChange={(e) => setFirstNumber(e.target.value)}
             />
 
             <label>Second Number:</label>
-            <Input
+            <StyledInput
                 type="number"
                 value={secondNumber}
                 onChange={(e) => setSecondNumber(e.target.value)}
             />
 
             <ButtonContainer>
-                <CalcButton onClick={addition}>+</CalcButton>
-                <CalcButton onClick={subtraction}>-</CalcButton>
-                <CalcButton onClick={multiplication}>*</CalcButton>
-                <CalcButton onClick={division}>/</CalcButton>
-                <CalcButton onClick={power}>**</CalcButton>
-                <CalcButton onClick={clearFields}>Clear</CalcButton>
+                <CalculatorButton onClick={addition}>+</CalculatorButton>
+                <CalculatorButton onClick={subtraction}>-</CalculatorButton>
+                <CalculatorButton onClick={multiplication}>*</CalculatorButton>
+                <CalculatorButton onClick={division}>/</CalculatorButton>
+                <CalculatorButton onClick={power}>**</CalculatorButton>
+                <CalculatorButton onClick={clearFields}>Clear</CalculatorButton>
             </ButtonContainer>
 
-            <Output color={output === "Error" || Number(output) < 0 ? "red" : "black"}>
+            <CalculatorOutput color={output === "Error" || Number(output) < 0 ? "red" : "black"}>
                 {output}
-            </Output>
+            </CalculatorOutput>
         </CalculatorContainer>
     );
 }

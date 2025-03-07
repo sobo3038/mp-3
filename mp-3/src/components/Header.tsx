@@ -1,15 +1,14 @@
 import styled from "styled-components";
-
-import { StyledHeader, HeaderContainer, StyledH1, StyledSubtitle  } from "../StyledComponents";
+import { StyledHeader, StyledHeaderContainer, StyledHeaderOne, StyledSubtitle  } from "../StyledComponents";
 
 
 export function Header(){
     return (
         <StyledHeader>
-            <HeaderContainer>
-                <StyledH1>Sofia Boada</StyledH1>
+            <StyledHeaderContainer>
+                <StyledHeaderOne>Sofia Boada</StyledHeaderOne>
                 <StyledSubtitle>My Online Resume</StyledSubtitle>
-            </HeaderContainer>
+            </StyledHeaderContainer>
         </StyledHeader>
     );
 };
