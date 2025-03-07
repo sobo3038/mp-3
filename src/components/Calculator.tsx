@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import { useState } from "react";
 import { CalculatorContainer, StyledInput, ButtonContainer, CalculatorButton, CalculatorOutput } from "../StyledComponents";
 

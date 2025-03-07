@@ -1,4 +1,3 @@
-import React from "react";
 import { StyledFooter, FooterLink } from "../StyledComponents";
 
 export function Footer() {

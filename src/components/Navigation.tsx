@@ -1,5 +1,3 @@
-import styled from "styled-components";
-import { Link } from "react-router-dom";
 import { StyledNavigation, StyledNavigationList, StyledNavigationItem, StyledNavigationLink } from "../StyledComponents";
 
 export function Nav() {
